@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OpenJT - 前端第一题</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://d.jotang.club/uploads/default/optimized/1X/1921183513e1f7ba620b0dbf0825a1b86c73dd18_2_32x32.png"
+    />
+  </head>
+  <body>
+    <header id="main-header">
+      <nav id="main-nav">
+        <div class="container">
+          <a
+            href="https://d.jotang.club/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="logo-link"
+          >
+            <img src="./image/logo.png" alt="OpenJT Logo" class="logo" />
+          </a>
+          <div class="topic">OpenJT</div>
+          <ul class="nav-links">
+            <li><a href="#home">首页</a></li>
+            <li><a href="#about">关于我们</a></li>
+            <li><a href="#services">工作室信息</a></li>
+            <li><a href="#growth">发展-潜力无限</a></li>
+            <li><a href="#contact">联系我们</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="carousel">
+        <div class="carousel-container">
+          <div class="carousel-slide">
+            <img src="./image/banner1.png" alt="AI Solution 1" />
+            <h2>创新AI解决方案</h2>
+          </div>
+          <div class="carousel-slide">
+            <img src="./image/banner2.png" alt="AI Solution 2" />
+            <h2>智能数据分析</h2>
+          </div>
+          <div class="carousel-slide">
+            <img src="./image/banner3.png" alt="AI Solution 3" />
+            <h2>机器学习平台</h2>
+          </div>
+          <button id="prevBtn" class="carousel-btn">&#10094;</button>
+          <button id="nextBtn" class="carousel-btn">&#10095;</button>
+        </div>
+      </section>
+      <section id="home">
+        <div class="container">
+          <p id="welcome"><img src="./image/welcome.jpg" alt="welcome" /></p>
+          <h1>欢迎来到 OpenJT</h1>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container">
+          <h2>关于 OpenJT</h2>
+          <div class="about-content">
+            <div class="about-text">
+              <p>
+                OpenJT 是一家由电子科技大学<a
+                  class="in"
+                  href="https://d.jotang.club/"
+                  >焦糖工作室</a
+                >创办，致力于推动人工智能技术发展和应用的创新公司。我们的目标是通过先进的
+                AI 解决方案，帮助企业提高效率、降低成本、创造价值。<br />
+                公司的研究领域涵盖了广泛的人工智能领域，包括自然语言处理、计算机视觉、强化学习等。公司不仅致力于进行前沿的研究，还通过开发开放源代码和发布研究成果来促进人工智能领域的共享和合作。除了研究外，OpenJT也致力于推动人工智能技术的道德和安全发展，并积极参与社会对人工智能的讨论和规范制定。<br />
+                OpenJT欢迎对技术充满热情的你 渴望在实践中学习和成长的你
+                愿意与团队一起创造非凡成就的你 的加入！
+              </p>
+            </div>
+            <div class="about-image">
+              <img src="./image/about.png" alt="OpenJT Team" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services">
+        <div class="container">
+          <h2>焦糖工作室</h2>
+          <div class="services-grid">
+            <div class="service-card">
+              <h3>我们是谁</h3>
+              <p>
+                焦糖工作室(Jotang
+                Studio)隶属于电子科技大学信息与软件工程学院创新工坊，是一个充满活力和创造力的学生技术团体。我们不仅在各类竞赛和科研中表现优异，而且成员毕业后有非常优秀的工作和深造去向，包括北大、上交、微软、字节跳动、腾讯等众多顶尖学府和知名企业。
+              </p>
+            </div>
+            <div class="service-card">
+              <h3>我们的地点</h3>
+              <p>
+                我们的活动基地位于电子科技大学沙河校区的三教507和403教室，这里有我们的专属工位、显示屏、冰箱、咖啡机、打印机等等，不仅是我们交流思想、碰撞创意的场所，也是我们共同成长和进步的家园。
+              </p>
+            </div>
+            <div class="service-card">
+              <h3>我们的活动</h3>
+              <p>
+                技术钻研与开发：我们鼓励成员参与各种学习和实践，从前端到数据库，从人工智能到编译器，我们不断探索技术的无限可能。
+                团队合作：在焦糖工作室，我们相信团队的力量。通过协作，我们共同解决问题，实现目标。同时也有各种吃吃喝喝，一起快乐！
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="growth">
+        <div class="container">
+          <h2>我们的增长-潜力无限</h2>
+          <div class="chart-container">
+            <canvas id="growthChart"></canvas>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <h2>联系我们</h2>
+          <form id="contact-form">
+            <input type="text" name="name" placeholder="您的姓名" required />
+            <input type="email" name="email" placeholder="您的邮箱" required />
+            <textarea name="message" placeholder="您的留言" required></textarea>
+            <button type="submit">发送</button>
+          </form>
+        </div>
+        <div class="blank"></div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 OpenJT.</p>
+        <p>Developed by Rookie Song.</p>
+        <p>QQ:2390359880</p>
+        <p>Only for Recruit.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </body>
+</html>

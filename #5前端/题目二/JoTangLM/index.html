@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JoTangLM</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://d.jotang.club/uploads/default/optimized/1X/1921183513e1f7ba620b0dbf0825a1b86c73dd18_2_32x32.png"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <aside id="sidebar">
+        <a href="https://d.jotang.club" target="_blank" class="logo"
+          ><img src="./image/logo.png" alt="logo"
+        /></a>
+        <h2>会话列表</h2>
+        <button id="new-chat" class="btn btn-primary">新建会话</button>
+        <ul id="chat-list"></ul>
+        <div id="settings">
+          <h2 class="name1">JoTangLM</h2>
+          <h2>设置</h2>
+          <div class="setting-item">
+            <label for="theme-select">主题颜色:</label>
+            <select id="theme-select" class="select-styled">
+              <option value="light">浅色</option>
+              <option value="dark">深色</option>
+            </select>
+          </div>
+          <div class="setting-item">
+            <label for="response-length">AI回答长度:</label>
+            <input
+              type="range"
+              id="response-length"
+              min="1"
+              max="20"
+              step="1"
+              value="10"
+            />
+            <span id="response-length-value">10</span>
+          </div>
+          <div class="setting-item">
+            <label for="ai-temperature">AI的IQ:</label>
+            <input
+              type="range"
+              id="ai-temperature"
+              min="50"
+              max="120"
+              step="10"
+              value="80"
+            />
+            <span id="ai-temperature-value">80</span>
+          </div>
+        </div>
+      </aside>
+      <main id="chat-area">
+        <div id="chat-messages"></div>
+        <div id="input-area">
+          <textarea id="user-input" placeholder="输入您的问题..."></textarea>
+          <button id="send-button" class="btn btn-primary">发送</button>
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
